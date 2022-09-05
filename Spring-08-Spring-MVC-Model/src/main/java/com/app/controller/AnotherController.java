@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.ArrayList;
 import java.util.List;
 @Controller
-@RequestMapping("/mentor")
-public class MentorController {
+@RequestMapping("/another")
+public class AnotherController {
 
     @RequestMapping("/list")
     public String showTable(Model model){
@@ -23,5 +23,4 @@ public class MentorController {
         model.addAttribute("mentors",mentorList);
         return "mentor/mentorList";
     }
-
 }
